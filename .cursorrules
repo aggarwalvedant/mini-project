@@ -1,0 +1,110 @@
+# Minimum Spanning Tree Algorithm Visualization Project
+
+## Project Overview
+This project involves creating a graphical user interface (GUI) application that implements and visualizes both Kruskal's and Prim's algorithms for finding Minimum Spanning Trees (MST) in weighted graphs. The application will allow users to interact with a predefined graph, choose between the two algorithms, and visualize the resulting MST.
+
+## Project Requirements
+
+### Graph Visualization Requirements
+1. The application must display a weighted directed graph with the following specifications:
+   - 10 vertices labeled from 'a' through 'j'
+   - Each vertex should be represented as a circle with its label inside
+   - Edges should be represented as lines connecting vertices
+   - Each edge must display its weight value
+   - The graph layout should match the following structure:
+     - Vertex 'a' connects to vertices 'b' and 'h' with weights 4 and 8 respectively
+     - Vertex 'b' connects to vertices 'c' and 'h' with weights 8 and 11 respectively
+     - Vertex 'c' connects to vertices 'd', 'i', and 'g' with weights 7, 2, and 4 respectively
+     - Vertex 'd' connects to vertices 'e' and 'f' with weights 9 and 14 respectively
+     - Vertex 'e' connects to vertex 'f' with weight 10
+     - Vertex 'f' connects to vertex 'g' with weight 2
+     - Vertex 'g' connects to vertices 'h' and 'i' with weights 1 and 6 respectively
+     - Vertex 'h' connects to vertex 'i' with weight 7
+
+### Functional Requirements
+1. Algorithm Implementation:
+   - Implement both Kruskal's and Prim's algorithms
+   - Algorithms must correctly identify the MST for the given graph
+   - Starting vertex for Prim's algorithm should be vertex 'A'
+
+2. User Interface Features:
+   - Provide a way to switch between algorithms (Kruskal's and Prim's)
+   - Display the original graph clearly
+   - Highlight the MST edges when algorithm is executed
+   - Show the total weight of the MST
+   - Display the sequence of edges selected in the MST
+
+## Technical Specifications
+
+### Programming Requirements
+1. Language and Framework:
+   - Must be implemented in Java
+   - GUI must use Java Swing components
+   - Minimum Java version: Java 8 or higher
+
+2. Code Structure:
+   - Implement proper object-oriented design
+   - Separate the GUI logic from algorithm implementation
+   - Use appropriate data structures for graph representation
+   - Include proper exception handling
+
+### GUI Components Requirements
+1. Main Window:
+   - Graph visualization panel
+   - Algorithm selection controls
+   - Result display area
+   - Execute button
+
+2. Graph Display:
+   - Custom panel for graph rendering
+   - Clear vertex and edge visualization
+   - Weight labels for edges
+   - Distinct visualization for selected MST edges
+
+## Implementation Guidelines
+
+### Code Organization
+1. Class Structure:
+   - Graph class for graph representation
+   - Vertex and Edge classes
+   - MST algorithm implementations
+   - GUI components classes
+   - Main application class
+
+2. Required Methods:
+   - Graph construction and manipulation
+   - Algorithm implementation methods
+   - GUI event handlers
+   - Drawing and visualization methods
+
+### Algorithm Implementation Details
+1. Kruskal's Algorithm:
+   - Implement Union-Find data structure
+   - Sort edges by weight
+   - Handle cycle detection
+
+2. Prim's Algorithm:
+   - Implement priority queue for edge selection
+   - Track visited vertices
+   - Handle edge selection based on minimum weight
+
+## Testing Requirements
+1. Verify correct MST identification
+2. Ensure proper handling of user interactions
+3. Validate graph visualization accuracy
+4. Test algorithm switching functionality
+5. Verify weight calculations
+
+## Performance Considerations
+1. Efficient graph data structure implementation
+2. Smooth rendering and updates
+3. Responsive user interface
+4. Proper memory management
+
+## Documentation Requirements
+1. Clear code comments
+2. JavaDoc for public methods
+3. README file with setup instructions
+4. User guide for application usage
+
+Remember to maintain clean, well-documented code and follow Java best practices throughout the implementation.
